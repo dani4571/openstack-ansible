@@ -104,6 +104,7 @@
     - role: "os_ironic"
       ironic_venv_tag: "{{ openstack_release }}"
       ironic_venv_download_url: "{{ openstack_repo_url }}/venvs/{{ openstack_release }}/{{ ansible_distribution | lower }}/ironic-{{ openstack_release }}.tgz"
+      glance_api_servers: "{{ glance_service_publicuri }}"
       tags:
         - "os-ironic"
     - role: "openstack_openrc"
