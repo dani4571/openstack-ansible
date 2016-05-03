@@ -332,6 +332,7 @@ nova_requires_pip_packages:
 
 nova_compute_pip_packages:
   - libvirt-python
+  - python-ironicclient
 
 # Common pip packages
 nova_pip_packages:
