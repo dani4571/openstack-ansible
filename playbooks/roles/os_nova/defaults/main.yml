@@ -96,7 +96,6 @@ nova_virt_types:
     nova_firewall_driver: nova.virt.firewall.NoopFirewallDriver
     nova_scheduler_use_baremetal_filters: False
     nova_scheduler_tracks_instance_changes: True
-nova_virt_type: ironic
 
 ## Nova Auth
 nova_service_region: RegionOne
