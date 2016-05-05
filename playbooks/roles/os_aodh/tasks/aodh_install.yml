@@ -114,10 +114,7 @@
     - aodh-pip-packages
 
 - name: Unarchive pre-built venv
-  unarchive:
-    src: "/var/cache/{{ aodh_venv_download_url | basename }}"
-    dest: "{{ aodh_venv_bin | dirname }}"
-    copy: "no"
+  command: /bin/tar xzf "/var/cache/{{ aodh_venv_download_url | basename }}" -C "{{ aodh_venv_bin | dirname }}"
   when:
     - aodh_venv_enabled | bool
     - aodh_get_venv | changed

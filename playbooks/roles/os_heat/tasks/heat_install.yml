@@ -123,10 +123,7 @@
     - heat-pip-packages
 
 - name: Unarchive pre-built venv
-  unarchive:
-    src: "/var/cache/{{ heat_venv_download_url | basename }}"
-    dest: "{{ heat_venv_bin | dirname }}"
-    copy: "no"
+  command: /bin/tar xzf "/var/cache/{{ heat_venv_download_url | basename }}" -C "{{ heat_venv_bin | dirname }}"
   when:
     - heat_venv_enabled | bool
     - heat_get_venv | changed

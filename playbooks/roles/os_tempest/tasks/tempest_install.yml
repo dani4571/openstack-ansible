@@ -71,10 +71,7 @@
     - tempest-pip-packages
 
 - name: Unarchive pre-built venv
-  unarchive:
-    src: "/var/cache/{{ tempest_venv_download_url | basename }}"
-    dest: "{{ tempest_git_dest }}"
-    copy: "no"
+  command: /bin/tar xzf "/var/cache/{{ tempest_venv_download_url | basename }}" -C "{{ tempest_git_dest }}"
   when:
     - tempest_get_venv | success
   tags:

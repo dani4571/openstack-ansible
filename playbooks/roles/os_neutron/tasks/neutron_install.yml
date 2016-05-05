@@ -152,10 +152,7 @@
     - neutron-pip-packages
 
 - name: Unarchive pre-built venv
-  unarchive:
-    src: "/var/cache/{{ neutron_venv_download_url | basename }}"
-    dest: "{{ neutron_venv_bin | dirname }}"
-    copy: "no"
+  command: /bin/tar xzf "/var/cache/{{ neutron_venv_download_url | basename }}" -C "{{ neutron_venv_bin | dirname }}"
   when:
     - neutron_venv_enabled | bool
     - neutron_get_venv | changed

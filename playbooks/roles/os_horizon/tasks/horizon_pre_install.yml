@@ -142,10 +142,7 @@
     - horizon-pip-packages
 
 - name: Unarchive pre-built venv
-  unarchive:
-    src: "/var/cache/{{ horizon_venv_download_url | basename }}"
-    dest: "{{ horizon_venv_bin | dirname }}"
-    copy: "no"
+  command: /bin/tar xzf "/var/cache/{{ horizon_venv_download_url | basename }}" -C "{{ horizon_venv_bin | dirname }}"
   when:
     - horizon_venv_enabled | bool
     - horizon_get_venv | changed

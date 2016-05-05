@@ -114,10 +114,7 @@
     - ceilometer-pip-packages
 
 - name: Unarchive pre-built venv
-  unarchive:
-    src: "/var/cache/{{ ceilometer_venv_download_url | basename }}"
-    dest: "{{ ceilometer_venv_bin | dirname }}"
-    copy: "no"
+  command: /bin/tar xzf "/var/cache/{{ ceilometer_venv_download_url | basename }}" -C "{{ ceilometer_venv_bin | dirname }}"
   when:
     - ceilometer_venv_enabled | bool
     - ceilometer_get_venv | changed

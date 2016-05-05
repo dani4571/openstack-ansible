@@ -123,10 +123,7 @@
     - glance-pip-packages
 
 - name: Unarchive pre-built venv
-  unarchive:
-    src: "/var/cache/{{ glance_venv_download_url | basename }}"
-    dest: "{{ glance_venv_bin | dirname }}"
-    copy: "no"
+  command: /bin/tar xzf "/var/cache/{{ glance_venv_download_url | basename }}" -C "{{ glance_venv_bin | dirname }}"
   when:
     - glance_venv_enabled | bool
     - glance_get_venv | changed

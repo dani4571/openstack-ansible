@@ -123,10 +123,7 @@
     - swift-pip-packages
 
 - name: Unarchive pre-built venv
-  unarchive:
-    src: "/var/cache/{{ swift_venv_download_url | basename }}"
-    dest: "{{ swift_venv_bin | dirname }}"
-    copy: "no"
+  command: /bin/tar xzf "/var/cache/{{ swift_venv_download_url | basename }}" -C "{{ swift_venv_bin | dirname }}"
   when:
     - swift_venv_enabled | bool
     - swift_get_venv | changed
