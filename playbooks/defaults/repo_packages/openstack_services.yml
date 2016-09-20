@@ -170,6 +170,13 @@ swift_git_dest: "/opt/swift_{{ swift_git_install_branch | replace('/', '_') }}"
 swift_git_project_group: swift_all
 
 
+## Swift3 middleware
+swift3_git_repo: https://git.openstack.org/openstack/swift3
+swift3_git_install_branch: ccd8ab81b7a3395c1d546640ea1300db20084e70 # HEAD of "master" as of 16.09.2016
+swift3_git_dest: "/opt/swift3_{{ swift3_git_install_branch | replace('/', '_') }}"
+swift3_git_project_group: swift_all
+
+
 ## Ironic service
 ironic_git_repo: https://git.openstack.org/openstack/ironic
 ironic_git_install_branch: 5603a215b726ca465eed2867d830821bb24b1a72 # HEAD of "master" as of 16.09.2016
