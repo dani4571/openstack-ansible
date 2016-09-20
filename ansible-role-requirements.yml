@@ -106,7 +106,7 @@
 - name: repo_build
   scm: git
   src: https://github.com/cfarquhar/openstack-ansible-repo_build
-  version: 8b1a4bc2679a41812c3f0c1db4b7d05b153dca4d
+  version: 8e30d1a9e7504c41020634398bf6aadeded4654a
 - name: repo_server
   scm: git
   src: https://git.openstack.org/openstack/openstack-ansible-repo_server
