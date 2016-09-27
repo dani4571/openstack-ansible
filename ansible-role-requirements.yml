@@ -90,10 +90,11 @@
   scm: git
   src: http://git.openstack.org/openstack/openstack-ansible-os_swift
   version: c4c8a9c3e15dd6175228ccc7115a97443bf3505c
+# Use patched os_tempest until https://review.openstack.org/#/c/378051/ merges
 - name: os_tempest
   scm: git
-  src: http://git.openstack.org/openstack/openstack-ansible-os_tempest
-  version: a8b32c720fd612507b8e168e1fb1aeed72e4600d
+  src: http://github.com/cfarquhar/openstack-ansible-os_tempest
+  version: 74321eb4900411d350d6630cff2792e0348e3b3e
 - name: plugins
   path: /etc/ansible
   scm: git
