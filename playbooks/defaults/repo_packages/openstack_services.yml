@@ -112,6 +112,13 @@ swift_git_install_branch: d75e6d39789e1cc83ac0614f5f4697e1df2f1f57 # HEAD of "st
 swift_git_dest: "/opt/swift_{{ swift_git_install_branch | replace('/', '_') }}"
 
 
+## Swift3 middleware
+swift3_git_repo: https://git.openstack.org/openstack/swift3
+swift3_git_install_branch: ccd8ab81b7a3395c1d546640ea1300db20084e70 # HEAD of "master" as of 16.09.2016
+swift3_git_dest: "/opt/swift3_{{ swift3_git_install_branch | replace('/', '_') }}"
+swift3_git_project_group: swift_all
+
+
 ## Ironic service
 ironic_git_repo: https://git.openstack.org/openstack/ironic
 ironic_git_install_branch: a632e9be06ccac382adaade0aafe6340ebe98099 # HEAD of "stable/mitaka" as of 08.09.2016
