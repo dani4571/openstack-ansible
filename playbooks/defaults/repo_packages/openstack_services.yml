@@ -114,7 +114,7 @@ swift_git_dest: "/opt/swift_{{ swift_git_install_branch | replace('/', '_') }}"
 
 ## Swift3 middleware
 swift3_git_repo: https://git.openstack.org/openstack/swift3
-swift3_git_install_branch: ccd8ab81b7a3395c1d546640ea1300db20084e70 # HEAD of "master" as of 16.09.2016
+swift3_git_install_branch: v1.11
 swift3_git_dest: "/opt/swift3_{{ swift3_git_install_branch | replace('/', '_') }}"
 swift3_git_project_group: swift_all
 
