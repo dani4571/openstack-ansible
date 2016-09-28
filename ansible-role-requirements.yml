@@ -86,10 +86,12 @@
   scm: git
   src: http://git.openstack.org/openstack/openstack-ansible-os_nova
   version: 34446081f941d217c44eb023ae6aafe6bf07716f
+# os_swift is a custom fork that includes swift3 middleware support
+# HEAD of feature/stable/mitaka/support-swift3-middleware
 - name: os_swift
   scm: git
-  src: http://git.openstack.org/openstack/openstack-ansible-os_swift
-  version: c4c8a9c3e15dd6175228ccc7115a97443bf3505c
+  src: http://github.com/cfarquhar/openstack-ansible-os_swift
+  version: 6e28da2f77fde1db7a82324c4966aba017cfd682
 # Use patched os_tempest until https://review.openstack.org/#/c/378051/ merges
 - name: os_tempest
   scm: git
