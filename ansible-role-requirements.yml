@@ -17,7 +17,7 @@
 - name: galera_server
   scm: git
   src: http://git.openstack.org/openstack/openstack-ansible-galera_server
-  version: af8e44dcb24ba04a4e1bd0437f532fbe7ac5d904
+  version: bf3480a7ff12ee91baaadd6b5c26758af1bbca3e
 - name: keepalived
   scm: git
   src: http://github.com/evrardjp/ansible-keepalived
@@ -37,7 +37,7 @@
 - name: openstack-ansible-security
   scm: git
   src: http://git.openstack.org/openstack/openstack-ansible-security
-  version: ca9b7decdf77bdd20c13694e348e9e21ff7a1688
+  version: 1446cc34170a95f73736927a6b22559c01221943
 - name: openstack_hosts
   scm: git
   src: http://git.openstack.org/openstack/openstack-ansible-openstack_hosts
@@ -77,15 +77,15 @@
 - name: os_ironic
   scm: git
   src: http://git.openstack.org/openstack/openstack-ansible-os_ironic
-  version: 03443e4d9b1dcb939f34c521a99b17022ec71470
+  version: 3c1cd4724bae057b8d61d71d9a8795c634a0160a
 - name: os_neutron
   scm: git
   src: http://git.openstack.org/openstack/openstack-ansible-os_neutron
-  version: f8b0389d6d7d7d7d907cfc1a41f673cb67c55d1f
+  version: ae7af49d1670f5b37e64a0f0bb1590e20557d980
 - name: os_nova
   scm: git
   src: http://git.openstack.org/openstack/openstack-ansible-os_nova
-  version: 34446081f941d217c44eb023ae6aafe6bf07716f
+  version: e2d63a85c0625195ca7eb15bee18bec108c4b4e6
 # os_swift is a custom fork that includes swift3 middleware support
 # HEAD of feature/stable/mitaka/support-swift3-middleware
 - name: os_swift
@@ -101,7 +101,7 @@
   path: /etc/ansible
   scm: git
   src: http://git.openstack.org/openstack/openstack-ansible-plugins
-  version: 620c64e3160edb741bf853def67cf7d034396257
+  version: 2fc5ceb95fd2fd30ebaefb1b73d3f831cd82ab93
 - name: rabbitmq_server
   scm: git
   src: http://git.openstack.org/openstack/openstack-ansible-rabbitmq_server
@@ -121,7 +121,7 @@
 - name: rsyslog_server
   scm: git
   src: http://git.openstack.org/openstack/openstack-ansible-rsyslog_server
-  version: da10c8b3c5cac67138f0d66b93fe08acba24a10a
+  version: 74cf6cd7f2bf8bb66811ba259ba66825b4cc8ea8
 - name: sshd
   scm: git
   src: http://github.com/willshersystems/ansible-sshd
