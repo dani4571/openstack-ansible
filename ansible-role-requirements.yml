@@ -76,8 +76,8 @@
   version: b585f3eb5121cae47ed44f15f1e7762aeaf9248a
 - name: os_ironic
   scm: git
-  src: http://git.openstack.org/openstack/openstack-ansible-os_ironic
-  version: 3c1cd4724bae057b8d61d71d9a8795c634a0160a
+  src: http://github.com/cfarquhar/openstack-ansible-os_ironic
+  version: bfdf8f3cf5faeb8bd425ce7b5e644991bb7e8c38
 - name: os_neutron
   scm: git
   src: http://git.openstack.org/openstack/openstack-ansible-os_neutron
