@@ -92,10 +92,12 @@
   scm: git
   src: http://github.com/cfarquhar/openstack-ansible-os_swift
   version: 6e28da2f77fde1db7a82324c4966aba017cfd682
+# os_tempest is custom fork that allows enabling of ironic service
+# HEAD of feature/stable/mitaka/support_ironic_service
 - name: os_tempest
   scm: git
-  src: https://git.openstack.org/openstack/openstack-ansible-os_tempest
-  version: 74321eb4900411d350d6630cff2792e0348e3b3e
+  src: https://github.com/dani4571/openstack-ansible-os_tempest
+  version: 1901bc600ed1adeb97a51cae06396dc6f879baa3
 - name: plugins
   path: /etc/ansible
   scm: git
