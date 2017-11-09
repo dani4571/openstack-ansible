@@ -89,7 +89,7 @@ debug: false
 # RabbitMQ over encrypted connections on port 5671. To opt-out of this default,
 # set the rabbitmq_use_ssl variable to 'false'. The default setting of 'true'
 # is highly recommended for securing the contents of RabbitMQ messages.
-# rabbitmq_use_ssl: false
+rabbitmq_use_ssl: False
 
 # RabbitMQ management plugin is enabled by default, the guest user has been
 # removed for security reasons and a new userid 'monitoring' has been created
